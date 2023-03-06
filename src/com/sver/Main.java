@@ -1,0 +1,33 @@
+package com.sver;
+
+import com.sver.domain.MailCreator;
+import com.sver.model.MailCreatorImpl;
+import com.sver.model.MessageTextCreatorImpl;
+import com.sver.model.entity.Message;
+
+import java.util.HashMap;
+
+import static com.sver.test.data.WebsitesExamples.*;
+
+public class Main {
+    //a quick example:
+    public static void main(String[] args) {
+        //init
+        HashMap<String, String> yesterdayState = new HashMap<>();
+        HashMap<String, String> todayState = new HashMap<>();
+
+        yesterdayState.put(EXAMPLE_1.getKey(), EXAMPLE_1.getValue());
+        yesterdayState.put(EXAMPLE_2.getKey(), EXAMPLE_2.getValue());
+        yesterdayState.put(EXAMPLE_3.getKey(), EXAMPLE_3.getValue());
+
+        todayState.put(EXAMPLE_1_1.getKey(), EXAMPLE_1_1.getValue());
+        todayState.put(EXAMPLE_4.getKey(), EXAMPLE_4.getValue());
+        //
+
+
+        MailCreator mailCreator = new MailCreatorImpl(new MessageTextCreatorImpl());
+        Message message = mailCreator.createMessage(yesterdayState, todayState);
+
+        System.out.println(message.getText());
+    }
+}
