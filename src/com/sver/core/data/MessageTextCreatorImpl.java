@@ -1,10 +1,9 @@
-package com.sver.model;
-
+package com.sver.core.data;
 
 
 import com.sver.core.domain.MessageTextCreator;
 
-import java.util.ArrayList;
+import java.util.List;
 
 import static com.sver.utils.ListUtils.formatInCurlyBraces;
 
@@ -14,7 +13,7 @@ public class MessageTextCreatorImpl implements MessageTextCreator {
 
 
     @Override
-    public String createMessageText(ArrayList<String> disappearedPages, ArrayList<String> appearedPages, ArrayList<String> modifiedPages) {
+    public String createMessageText(List<String> disappearedPages, List<String> appearedPages, List<String> modifiedPages) {
         return "Здравствуйте, дорогая и.о. секретаря \n" +
                 "\n" +
                 "За последние сутки во вверенных Вам сайтах произошли следующие изменения: \n" +

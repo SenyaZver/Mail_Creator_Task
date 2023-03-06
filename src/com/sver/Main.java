@@ -1,9 +1,11 @@
 package com.sver;
 
 import com.sver.core.data.MailCreatorImpl;
+import com.sver.core.data.MessageTextCreatorImpl;
+import com.sver.core.data.entity.Message;
 import com.sver.core.domain.MailCreator;
-import com.sver.model.MessageTextCreatorImpl;
-import com.sver.model.entity.Message;
+import com.sver.test.Tester;
+
 
 import java.util.HashMap;
 
@@ -12,6 +14,7 @@ import static com.sver.test.data.WebsitesExamples.*;
 public class Main {
     //a quick example:
     public static void main(String[] args) {
+
         //init
         HashMap<String, String> yesterdayState = new HashMap<>();
         HashMap<String, String> todayState = new HashMap<>();

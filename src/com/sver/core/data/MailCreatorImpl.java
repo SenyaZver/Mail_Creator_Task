@@ -1,10 +1,11 @@
 package com.sver.core.data;
 
+import com.sver.core.data.entity.Message;
 import com.sver.core.domain.MailCreator;
 import com.sver.core.domain.MessageTextCreator;
-import com.sver.model.entity.Message;
 
-import java.util.*;
+import java.util.List;
+import java.util.Map;
 
 import static com.sver.utils.MapUtils.getDifference;
 import static com.sver.utils.MapUtils.getSameKeyDifferentValues;
@@ -19,10 +20,10 @@ public class MailCreatorImpl implements MailCreator {
 
 
     @Override
-    public Message createMessage(HashMap<String, String> yesterdayStates, HashMap<String, String> todayStates) {
-        ArrayList<String> disappearedPages = getDifference(yesterdayStates, todayStates);
-        ArrayList<String> appearedPages = getDifference(todayStates, yesterdayStates);
-        ArrayList<String> modifiedPages = getSameKeyDifferentValues(yesterdayStates, todayStates);
+    public Message createMessage(Map<String, String> yesterdayStates, Map<String, String> todayStates) {
+        List<String> disappearedPages = getDifference(yesterdayStates, todayStates);
+        List<String> appearedPages = getDifference(todayStates, yesterdayStates);
+        List<String> modifiedPages = getSameKeyDifferentValues(yesterdayStates, todayStates);
 
         String messageText = messageTextCreator.createMessageText( disappearedPages, appearedPages, modifiedPages );
 

@@ -1,12 +1,12 @@
 package com.sver.core.domain;
 
-import java.util.ArrayList;
+import java.util.List;
 
 public interface MessageTextCreator {
     String createMessageText(
-            ArrayList<String> disappearedPages,
-            ArrayList<String> appearedPages,
-            ArrayList<String> modifiedPages
+            List<String> disappearedPages,
+            List<String> appearedPages,
+            List<String> modifiedPages
     );
 
 

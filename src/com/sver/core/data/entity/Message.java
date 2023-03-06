@@ -1,4 +1,4 @@
-package com.sver.model.entity;
+package com.sver.core.data.entity;
 
 
 //An immutable class, text is set only during creation

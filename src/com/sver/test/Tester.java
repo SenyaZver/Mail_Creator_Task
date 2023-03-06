@@ -1,10 +1,11 @@
 package com.sver.test;
 
 import com.sver.core.data.MailCreatorImpl;
+import com.sver.core.data.entity.Message;
 import com.sver.core.domain.MailCreator;
 import com.sver.core.domain.MessageTextCreator;
-import com.sver.model.entity.Message;
 import com.sver.test.data.MessageTextCreatorTest;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 

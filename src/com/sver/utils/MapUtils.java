@@ -27,7 +27,7 @@ public class MapUtils {
         ArrayList<T> result = new ArrayList<>();
 
 
-        Set<T> intersection = new HashSet<T>(first.keySet());
+        Set<T> intersection = new HashSet<>(first.keySet());
         intersection.retainAll(second.keySet());
 
         for (T key: intersection) {
