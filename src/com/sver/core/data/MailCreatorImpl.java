@@ -1,7 +1,7 @@
-package com.sver.model;
+package com.sver.core.data;
 
-import com.sver.domain.MailCreator;
-import com.sver.domain.MessageTextCreator;
+import com.sver.core.domain.MailCreator;
+import com.sver.core.domain.MessageTextCreator;
 import com.sver.model.entity.Message;
 
 import java.util.*;
@@ -15,6 +15,7 @@ public class MailCreatorImpl implements MailCreator {
     public MailCreatorImpl(MessageTextCreator messageTextCreator) {
         this.messageTextCreator = messageTextCreator;
     }
+
 
 
     @Override

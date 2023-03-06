@@ -1,6 +1,8 @@
 package com.sver.model;
 
-import com.sver.domain.MessageTextCreator;
+
+
+import com.sver.core.domain.MessageTextCreator;
 
 import java.util.ArrayList;
 

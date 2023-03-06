@@ -1,6 +1,6 @@
-package com.sver.test.model;
+package com.sver.test.data;
 
-import com.sver.domain.MessageTextCreator;
+import com.sver.core.domain.MessageTextCreator;
 
 import java.util.ArrayList;
 import java.util.Arrays;

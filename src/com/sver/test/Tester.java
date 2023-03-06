@@ -1,11 +1,10 @@
 package com.sver.test;
 
-import com.sver.domain.MailCreator;
-import com.sver.domain.MessageTextCreator;
-import com.sver.model.MailCreatorImpl;
+import com.sver.core.data.MailCreatorImpl;
+import com.sver.core.domain.MailCreator;
+import com.sver.core.domain.MessageTextCreator;
 import com.sver.model.entity.Message;
-import com.sver.test.model.MessageTextCreatorTest;
-
+import com.sver.test.data.MessageTextCreatorTest;
 import java.util.ArrayList;
 import java.util.HashMap;
 
@@ -13,7 +12,8 @@ import static com.sver.test.data.WebsitesExamples.*;
 import static com.sver.utils.MapUtils.getDifference;
 import static com.sver.utils.MapUtils.getSameKeyDifferentValues;
 
-//A simple hardcoded tester, I didn't bother with asserts and just printed resulting messages
+
+//A simple tester, I didn't write asserts to make it possible to see from console
 public class Tester {
 
     public static void GetSameKeyDifferentValuesTestCase() {

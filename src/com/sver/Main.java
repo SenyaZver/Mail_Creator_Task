@@ -1,7 +1,7 @@
 package com.sver;
 
-import com.sver.domain.MailCreator;
-import com.sver.model.MailCreatorImpl;
+import com.sver.core.data.MailCreatorImpl;
+import com.sver.core.domain.MailCreator;
 import com.sver.model.MessageTextCreatorImpl;
 import com.sver.model.entity.Message;
 
